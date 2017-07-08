@@ -104,6 +104,10 @@ my-env/
 venv/
 ENV/
 
+config/config.ini
+.idea/
+*.png
+
 # Spyder project settings
 .spyderproject
 
