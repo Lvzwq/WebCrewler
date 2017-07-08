@@ -48,10 +48,13 @@ ActionChains(driver).move_to_element(p).click(p).perform()
 # driver.implicitly_wait(2)
 time.sleep(2)
 
-# driver.close()
-
 print driver.current_url
 print driver.get_cookies()
+
+# 关闭浏览器
+# driver.close()
+
+
 
 
 
