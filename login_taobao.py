@@ -33,7 +33,6 @@ elem_submit.submit()
 # driver.implicitly_wait(3)
 time.sleep(2)
 
-driver.save_screenshot(current_dir() + "1.png")
 
 # 模拟点击动作行为
 li = driver.find_element_by_class_name("J_MtNavSubTrigger")
@@ -46,13 +45,14 @@ time.sleep(2)
 ActionChains(driver).move_to_element(p).click(p).perform()
 
 # driver.implicitly_wait(2)
-time.sleep(2)
-
+time.sleep(3)
+# 截图保存
+driver.save_screenshot(current_dir() + "1.png")
 print driver.current_url
 print driver.get_cookies()
 
 # 关闭浏览器
-# driver.close()
+#driver.close()
 
 
 

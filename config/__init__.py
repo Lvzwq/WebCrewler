@@ -10,3 +10,5 @@ config_path = os.path.join(web_root, "config")
 cp = ConfigParser()
 cp.read(os.path.join(config_path, "config.ini"))
 user = dict(cp.items("user"))
+
+weibo_user = dict(cp.items("weibo_user"))
