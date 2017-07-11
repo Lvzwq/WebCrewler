@@ -8,7 +8,9 @@
 import scrapy
 
 
-class ScrapytestItem(scrapy.Item):
+class TmallItem(scrapy.Item):
     # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    GOODS_NAME = scrapy.Field()  # 商品名称
+    GOODS_PRICE = scrapy.Field()  # 价格
+    MONTHLY_SALES = scrapy.Field()  # 月销量
+    GOODS_URL = scrapy.Field()  # 商品url
