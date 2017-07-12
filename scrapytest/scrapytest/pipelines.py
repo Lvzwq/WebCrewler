@@ -9,4 +9,8 @@
 class ScrapytestPipeline(object):
 
     def process_item(self, item, spider):
-        return item
+        print "商品名称", item.get("GOODS_NAME")
+        print "商品单价", item.get("GOODS_PRICE")
+        print "商品详情页链接", item.get("GOODS_URL")
+        print "商品月销量", item.get("MONTHLY_SALES")
+        pass
